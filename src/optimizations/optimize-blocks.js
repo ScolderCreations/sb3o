@@ -20,6 +20,16 @@ class OptimizeBlocks extends Optimization {
         if (!block.shadow) {
           delete block.shadow;
         }
+        if (!block.x) {
+          delete block.x
+        } else {
+          block.x = 0
+        }
+        if (!block.y) {
+          delete block.y
+        } else {
+          block.y = 0
+        }
       }
     }
   }
